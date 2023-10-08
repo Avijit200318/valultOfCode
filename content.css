@@ -7,6 +7,19 @@ html {
     font-family: sans-serif;
 }
 
+.imageContainer img {
+    width: 100%;
+    height: 325px;
+}
+
+.imageContainer h2 {
+    position: absolute;
+    top: 300px;
+    color: white;
+    font-size: 50px;
+    left: 138px;
+}
+
 h1 {
     margin-top: 50px;
     margin-left: 259px;
@@ -98,7 +111,9 @@ h1 {
     height: 217px;
     cursor: pointer;
 }
-.image img:hover, #three:hover{
+
+.image img:hover,
+#three:hover {
     transform: scale(1.05);
 }
 
@@ -106,9 +121,20 @@ h1 {
     .card {
         margin: 11px;
     }
+    .imageContainer h2{
+        top: 229px;
+    }
 }
 
 @media (max-width: 480px) {
+    .imageContainer img{
+        height: 161px;
+    }
+    .imageContainer h2{
+        left: 11%;
+        top: 20%;
+        font-size: 23px;
+    }
     h1 {
         margin-left: 28px;
     }
